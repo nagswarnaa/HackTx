@@ -7,6 +7,23 @@
   height: 100vh;
 }
 
+.cont {
+  margin-left: 30%;
+  margin-top: 10%;
+  width: 100vh;
+  height: 100vh;
+  justify-content: center;
+}
+
+.require {
+  color: #666;
+}
+
+label small {
+  color: #999;
+  font-weight: normal;
+}
+
 .login {
   display: flex;
 }

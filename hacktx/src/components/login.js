@@ -27,7 +27,6 @@ const Login = () => {
             setpasswordError("");
             formIsValid = true;
         }
-
         return formIsValid;
     };
 
