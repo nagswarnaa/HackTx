@@ -41,47 +41,45 @@ const Login = () => {
         <div className="login">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" alt={"Sample Imag"} />
             <div className="container">
-                <div className="row d-flex justify-content-center">
-                    <div className="col-md-4">
-                        <form id="loginform" className='Auth-form' onSubmit={loginSubmit}>
-                            <h3 className="Auth-form-title">Sign In</h3>
-                            <div className="form-group Auth-form-content">
-                                <label className="label">Email address</label>
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    id="EmailInput"
-                                    name="EmailInput"
-                                    aria-describedby="emailHelp"
-                                    placeholder="Enter email"
-                                    onChange={(event) => setEmail(event.target.value)}
-                                />
-                                <small id="emailHelp" className="text-danger form-text">
-                                    {emailError}
-                                </small>
-                            </div>
-                            <div className="form-group Auth-form-content">
-                                <label>Password</label>
-                                <input
-                                    type="password"
-                                    className="form-control"
-                                    id="exampleInputPassword1"
-                                    placeholder="Password"
-                                    onChange={(event) => setPassword(event.target.value)}
-                                />
-                                <small id="passworderror" className="text-danger form-text">
-                                    {passwordError}
-                                </small>
-                            </div>
+                <div className="col-md-4 cls">
+                    <form id="loginform" className='Auth-form' onSubmit={loginSubmit}>
+                        <h3 className="Auth-form-title">Sign In</h3>
+                        <div className="form-group Auth-form-content">
+                            <label className="label">Email address</label>
+                            <input
+                                type="email"
+                                className="form-control"
+                                id="EmailInput"
+                                name="EmailInput"
+                                aria-describedby="emailHelp"
+                                placeholder="Enter email"
+                                onChange={(event) => setEmail(event.target.value)}
+                            />
+                            <small id="emailHelp" className="text-danger form-text">
+                                {emailError}
+                            </small>
+                        </div>
+                        <div className="form-group Auth-form-content">
+                            <label>Password</label>
+                            <input
+                                type="password"
+                                className="form-control"
+                                id="exampleInputPassword1"
+                                placeholder="Password"
+                                onChange={(event) => setPassword(event.target.value)}
+                            />
+                            <small id="passworderror" className="text-danger form-text">
+                                {passwordError}
+                            </small>
+                        </div>
 
-                            <button type="submit" className="d-grid gap-2 mt-3 btn btn btn-primary ">
-                                Login
-                            </button>
-                        </form>
-                    </div>
+                        <button type="submit" className="d-grid gap-2 mt-3 btn btn btn-primary ">
+                            Login
+                        </button>
+                    </form>
                 </div>
-
             </div>
+
         </div>
     );
 }
